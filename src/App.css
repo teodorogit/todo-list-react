@@ -1,0 +1,178 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&family=Rubik:ital,wght@0,400;0,500;0,600;1,700&display=swap');
+
+html {
+  font-size: 10px;
+}
+
+body {
+  font-family:'Rubik',sans-serif;
+background-color: #f4f4f4;
+  padding: 30px;
+  background-image: url('./img/cidade.jpg');
+    background-position:center;
+  background-size: cover;
+
+}
+
+.app {
+  max-width: 600px;
+  margin: 0 auto 300px;
+  background-color: efefef;
+  border-radius: 10px;
+  padding: 20px 30px;
+  background-color: #fff;
+  border: 13px solid #85D3F2;
+}
+
+input:focus {
+ border: 2px solid #8C818C;
+} 
+
+h1 {
+  font-size: 2.8rem;
+  text-align: center;
+  /* background-color: #8C818C; */
+  color: #F2B5A7;
+  border-radius: 5px;
+}
+
+h2 {
+  font-size: 2.4rem;
+  margin-bottom: 1px;
+}
+
+p {
+  font-size: 1.8rem;
+  margin: 10px 0;
+}
+
+/*  */
+@media (max-width:340px){
+  h1 {
+    font-size: 2.2rem;
+  }
+  h2 {
+    font-size: 1.8rem;
+  }
+  p {
+    font-size: 1.4rem;
+  }
+
+  .todo-list div {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    gap: .5rem;
+     
+   
+  }
+  
+}
+/*  */
+input {
+  box-sizing: border-box;
+}
+
+button {
+  background-color: #f2b5a7fe;
+  color: #fff;
+  padding: 5px 10px;
+  border-radius: 3px;
+  cursor: pointer;
+  opacity: 0.8;
+  transition: 0.3s;
+  border: none;
+  margin-right: 10px;
+  font-size: 2rem;
+}
+
+ion-icon{
+ color:#eee;
+ font-size: 2.2rem;
+}
+
+button:hover {
+  opacity: 1;
+}
+
+/* BUTTONS */
+.complete {
+  background-color: #5cb85c;
+}
+
+.remove {
+  background-color: #D9534F;
+}
+
+.create-btn {
+  padding: 1rem;
+  font-size: 2rem;
+  background-color:#F21B42 ;
+}
+
+/* ********** */
+/* todo list */
+.todo-list {
+  margin-bottom: 2rem;
+  padding-bottom: 2rem;
+  border-bottom: 0.6rem solid #59261B
+
+}
+
+.todo {
+  background-color: #fff;
+  box-shadow: 0 0 1rem rgba(0,0,0,0.01);
+  padding: 10px;
+  margin-bottom: 10px;
+  border-radius: 5px;
+  display: flex;
+  justify-content: space-between;
+align-items: center;
+}
+
+.todo-form {
+  padding-bottom:1.5rem;
+}
+
+.placeholder {
+  font-size: 16px;
+}
+input, select {
+  padding: 5px;
+  margin-bottom: 1rem;
+  border-bottom: 1rem;
+  border: 1px solid #DDD;
+  border-radius: 3px;
+  width: 100%;
+height: 3.5rem;
+}
+
+.filter, .search {
+border-bottom: 1px solid #444;
+margin-bottom: 20px;
+padding-bottom: 20px;
+}
+
+.filter-section {
+
+  display:grid;
+  grid-template-columns: 1fr  1fr 1fr;
+  padding: 0.5rem 0.8rem 0.5rem 0.8rem;
+  column-gap: 5.5rem;
+
+}
+
+.ordem {
+
+  margin: 0 auto;
+  grid-column: 3 /-1;
+}
+
+.filter-options {
+  display: flex;
+  justify-content: space-between;
+  gap: 3rem;
+}
+.filter-options div {
+  flex: 1 1 0;
+}
